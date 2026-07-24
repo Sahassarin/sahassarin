@@ -1,0 +1,113 @@
+income = float(input("Enter income: "))
+
+if income >= 5000000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000: ",remaining_income ,"บาท")
+   remaining_income = (500000.00 - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   remaining_income = (750000.00 - 500000.00) * 0.15
+   print ("500,000 - 750,000: ", remaining_income ,"บาท")
+   remaining_income = (1000000.00 - 750000.00) * 0.2
+   print ("750,000 - 1,000,000: ", remaining_income ,"บาท")
+   remaining_income = (2000000.00 - 1000000.00) * 0.25
+   print ("1,000,000 - 2,000,000: ", remaining_income ,"บาท")
+   remaining_income = (5000000.00 - 2000000.00) * 0.3
+   print ("2,000,000 - 5,000,000: ", remaining_income ,"บาท")
+   remaining_income = (income - 5000000) * 0.35
+   print ("5,000,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500 + 20000 + 37500 + 50000 + 250000 + 900000
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500 - 20000 - 37500 - 50000 - 250000 - 900000
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 35%")
+
+elif income >= 2000000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000: ",remaining_income ,"บาท")
+   remaining_income = (500000.00 - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   remaining_income = (750000.00 - 500000.00) * 0.15
+   print ("500,000 - 750,000: ", remaining_income ,"บาท")
+   remaining_income = (1000000.00 - 750000.00) * 0.2
+   print ("750,000 - 1,000,000: ", remaining_income ,"บาท")
+   remaining_income = (2000000.00 - 1000000.00) * 0.25
+   print ("1,000,000 - 2,000,000: ", remaining_income ,"บาท")
+   remaining_income = (income - 2000000.00) * 0.3
+   print ("2,000,000 - 5,000,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500 + 20000 + 37500 + 50000 + 250000
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500 - 20000 - 37500 - 50000 - 250000
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 30%")
+
+elif income >= 1000000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000: ",remaining_income ,"บาท")
+   remaining_income = (500000.00 - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   remaining_income = (750000.00 - 500000.00) * 0.15
+   print ("500,000 - 750,000: ", remaining_income ,"บาท")
+   remaining_income = (1000000.00 - 750000.00) * 0.2
+   print ("750,000 - 1,000,000: ", remaining_income ,"บาท")
+   remaining_income = (income - 1000000.00) * 0.25
+   print ("1,000,000 - 2,000,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500 + 20000 + 37500 + 50000
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500 - 20000 - 37500 - 50000
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 25%")
+
+elif income >= 750000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000: ",remaining_income ,"บาท")
+   remaining_income = (500000.00 - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   remaining_income = (750000.00 - 500000.00) * 0.15
+   print ("500,000 - 750,000: ", remaining_income ,"บาท")
+   remaining_income = (income - 750000.00) * 0.2
+   print ("750,000 - 1,000,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500 + 20000 + 37500
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500 - 20000 - 37500
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 20%")
+
+elif income >= 500000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000: ",remaining_income ,"บาท")
+   remaining_income = (500000.00 - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   remaining_income = (income - 500000.00) * 0.15
+   print ("500,000 - 750,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500 + 20000
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500 - 20000
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 15%")
+
+elif income >= 300000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (300000.00 - 150000.00) * 0.05
+   print ("150,000 - 300,000:", remaining_income ,"บาท")
+   remaining_income = (income - 300000.00) * 0.1
+   print ("300,000 - 500,000: ", remaining_income ,"บาท")
+   total_tax = remaining_income + 7500
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income - 7500
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 10%")
+
+elif   income > 150000:
+   print ("0 - 150,000: 0 ")
+   remaining_income = (income - 150000.00) * 0.05
+   print ("150,000 - 300,000:", remaining_income ,"บาท")
+   total_tax = remaining_income
+   print ("ภาษีรวม ", total_tax ,"บาท")
+   final_income = income - remaining_income
+   print ("รายได้หลังหักภาษี ", final_income ,"บาท")
+   print ("Effective Tax Rate = 5%")
