@@ -1,0 +1,19 @@
+print("นับจาก 1 ถึง 5:")
+for i in range(1, 6):
+    print(f"รอบที่ {i}")
+
+print("\nนับแบบขั้น:")
+for i in range(0, 11, 2):  # 0, 2, 4, 6, 8, 10
+    print(f"เลขคู่: {i}")
+
+print("\nLoop ผ่าน string:")
+name = "Python"
+for letter in name:
+    print(f"ตัวอักษร: {letter}")
+
+print("\nLoop ผ่าน list:")
+fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(f"ผลไม้: {fruit}")
+
+print("=" * 50)
