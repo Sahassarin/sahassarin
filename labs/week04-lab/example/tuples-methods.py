@@ -11,8 +11,8 @@ print(f"Count of 2: {numbers.count(2)}") # 3
 print(f"Index of 3: {numbers.index(3)}")  # 2
 
 # Check membership
-print(f"Is 'red' in colors? {'red' in colors}")      # True
-print(f"Is 'yellow' in colors? {'yellow' in colors}") # False
+print(f"Is 'red' in colors? {'red' in colors}")      # True ที่มีผลเป็นจริงเพราะใน colors มี red
+print(f"Is 'yellow' in colors? {'yellow' in colors}") # False ที่มีผลเป็นเท็จเพราะใน colors ไม่มี yellow
 
 # Min, max, sum (for numeric tuples)
 print(f"Min: {min(numbers)}")            # 1
