@@ -1,4 +1,5 @@
 # Empty tuple
+# tuple คือการใข้ () list ใช้[]
 empty_tuple = ()
 another_empty_tuple = tuple()
 
@@ -7,13 +8,15 @@ coordinates = (10, 20)
 rgb_color = (255, 128, 0)
 mixed_tuple = (1, "hello", 3.14, True)
 
+# เวลาสร้าง tuple ถ้ามี 1 ตัวต้องใส่ , ถ้าไม่ใส่จะเป็นนิพจน์
 # Single element tuple (note the comma!)
 single_tuple = (42,)  # Without comma, it's just parentheses around a value
 not_a_tuple = (42)    # This is just an integer
 
 # Tuple from list
 my_list = [1, 2, 3, 4]
-my_tuple = tuple(my_list)
+my_tuple = tuple(my_list) # ขัางใน my_list จะเป็น (1,2,3,4) list สามารถแปลงค่าหรือเพิ่มค่าได้ตลอด
+ # list มีไว้แปลงค่าเป็น tuple แต่ tuple ไม่สามารถแก้ได้เหมื่อน list
 
 # Tuple from string
 char_tuple = tuple("hello")  # ('h', 'e', 'l', 'l', 'o')
