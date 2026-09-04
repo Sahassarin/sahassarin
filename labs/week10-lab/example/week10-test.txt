@@ -1,0 +1,85 @@
+name = India
+graduate = B.E.
+multiline = This is a
+multiline string
+example
+
+print("\n=== STRING INDEXING ===")
+fruit = 'banana'
+print(f"fruit = {fruit}")
+print(f"fruit[1] = {fruit[1]}")  # 'a'
+
+n = 3
+w = fruit[n - 1]  # fruit[2] ที่ตรงนี้ได้ 2 เพราะ n - 1 (n = 3)
+print(f"n = {n}")
+print(f"w = fruit[n-1] = {w}")  # 'n'
+
+print("\nIndexing visualization:")
+print("b a n a n a")
+print("0 1 2 3 4 5")
+print("-6-5-4-3-2-1")  ช่วยให้เห็นภาพชัดมากยิ่งขึ้น
+
+print("\n=== TRAVERSING STRINGS ===")
+message = "hello"
+index = 0
+
+print("Method 1: Using for loop with enumerate")
+for i, char in enumerate(message):
+    print(f"message[{i}] = {char}")
+
+print("\nMethod 2: Manual indexing")
+index = 0
+for char in message:
+    print(f"message[{index}] = {char}")
+    index += 1
+
+print("\n=== APPENDING STRINGS ===")
+greeting = 'hello'
+name = input("Enter your name: ")
+greeting += name
+greeting += ". welcome to pune"
+print(greeting) จะขึ้นบนจอว่า hello ชื่อที่รับค่าจากผู้ใช้ และก็ . welcome to pune
+
+print("\n=== ITERATING THROUGH STRING ===")
+count = 0
+text = input("Insert the text: ")
+char = input("Character to find: ")
+for letter in text:
+    if letter == char:
+        count += 1
+print(f"{count} letters '{char}' found in '{text}'")
+
+
+print("\n=== MEMBERSHIP TEST ===")
+print("'a' in 'program':", 'a' in 'program')  # True
+print("'at' not in 'battle':", 'at' not in 'battle')  # False อันนี้เป็นการเช็คว่า มีตัวนี้ในข้อความนี้ไหม โดยที่ไม่ต้องใช้ for แต่ถ้าไม่ทำอันนี้ก็ใช้ อันข้างบนก็ได้
+
+\n ขึ้นบรรทัดใหม่
+\t tap เว้น 2 ช่อง
+\\ ใช้เพื่อจะ print \ ให้แสดง ขึ้นบนหน้าจอ
+\" ใช้เพื่อจะ print " ให้แสดง ขึ้นบนหน้าจอ
+
+
+(# คิอผลลัพธ์ที่แสดงผ่านบนหน้าจอ)
+
+print("\nUsing .format() method:")
+id_num = 10
+name = 'shankar'
+sal = 20000
+
+# Different format styles
+str1 = '{},{},{}'.format(id_num, name, sal)
+print(str1)  # 10,shankar,20000
+
+str2 = '{} - {} - {}'.format(id_num, name, sal)
+print(str2)  # 10 - shankar - 20000
+
+str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
+print(str3)
+
+
+print(f"Original: {text}")
+print(f"Upper: {text.upper()}") ทำให้ตัวอักษรทุกตัวเป็นพิมพิ์ใหญ่
+print(f"Lower: {text.lower()}") ทำให้ตัวอักษรทุกตัวเป็นพิมพิ์เล็ก
+print(f"Title: {text.title()}") ทำให้ตัวอักษรตัวแรกของแต่ละคำเป็นพิมพิ์ใหญ่ W T T W O P
+print(f"Capitalize: {text.capitalize()}") Capitalize ทำให้ตัวแรกเป็นตัวพิมพิ์ใหญ่ คือ W
