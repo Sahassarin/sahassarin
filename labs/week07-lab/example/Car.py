@@ -19,14 +19,14 @@ class Car:
         """Method to get car information"""
         return f"{self.year} {self.brand} {self.model} - Mileage: {self.mileage} km"
     
-    @classmethod
+    @classmethod # method 
     def get_vehicle_type(cls):
         """Class method to access class attributes"""
         return cls.vehicle_type
 
-# Creating instances
-car1 = Car("Toyota", "Camry", 2022)
-car2 = Car("Honda", "Civic", 2021)
+# Creating instances การสร้างวัตถุจากคลาส
+car1 = Car("Toyota", "Camry", 2022) # mileage = 0
+car2 = Car("Honda", "Civic", 2021) # mileage = 0
 
 # Accessing class attributes
 print(f"All cars have {Car.wheels} wheels")
@@ -39,3 +39,5 @@ print(car2.get_info())
 # Using methods
 print(car1.drive(100))
 print(car2.drive(250))
+
+rint(car1.drive(100))
