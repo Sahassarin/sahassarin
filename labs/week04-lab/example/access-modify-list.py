@@ -9,7 +9,10 @@ print(f"Last fruit: {fruits[4]}")       # kiwi
 print(f"Last fruit: {fruits[-1]}")      # kiwi
 print(f"Second last: {fruits[-2]}")     # grape
 
+<<<<<<< HEAD
 # ::1 อันนี้หมายถึงการก้าวเดิน ทีละ 1ก้าว  ถ้า-1ก็ถอยหลัง
+=======
+>>>>>>> upstream/main
 # List slicing
 print(f"First 3 fruits: {fruits[0:3]}")     # ['apple', 'banana', 'orange']
 print(f"From index 2: {fruits[2:]}")        # ['orange', 'grape', 'kiwi']
@@ -44,7 +47,11 @@ removed_fruit = fruits.pop()     # Remove and return last element
 print(f"Removed: {removed_fruit}")  # apple
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi']
 
+<<<<<<< HEAD
 removed_fruit = fruits.pop(1)    # Remove and return element at index 1 ถ้าเราจะลบ fruits ตัวแรกใช้ pop(0)
+=======
+removed_fruit = fruits.pop(1)    # Remove and return element at index 1
+>>>>>>> upstream/main
 print(f"Removed: {removed_fruit}")  # cherry
 print(fruits)  # ['pear', 'orange', 'grape', 'kiwi']
 

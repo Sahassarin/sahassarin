@@ -19,7 +19,10 @@ first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 birth_year = int(input("Enter your birth year: "))
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 current_year = 2025
 calculated_age = current_year - birth_year
 

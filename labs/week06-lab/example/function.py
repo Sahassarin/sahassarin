@@ -7,8 +7,11 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
+<<<<<<< HEAD
 # Function คือแบ่งโปรแกรมใหญ่ให้เป็นเล็กๆสามารถแก้ไขได้ง่าย
 
+=======
+>>>>>>> upstream/main
 # Example 1: Simple function without parameters
 def say_hello():
     """A simple function that prints a greeting"""
@@ -114,18 +117,24 @@ def square(n):
     """Returns the square of a number"""
     return n * n
 
+<<<<<<< HEAD
 # จากตัวอย่างด้านบน ให้เขียน function ชื่อ square_root(n):
 def square_root(n):
     return n ** 0.5
 
+=======
+>>>>>>> upstream/main
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+<<<<<<< HEAD
 print(f"square root of 25 =", square_root(25))
 print()
 
+=======
+>>>>>>> upstream/main
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================

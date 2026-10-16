@@ -15,9 +15,14 @@ x, y = point
 print(f"x: {x}, y: {y}")                # x: 10, y: 20
 
 # Multiple assignment using tuples
+<<<<<<< HEAD
 person = ("Alice", 25, "Engineer") 
 name, age, job = person # มันมีไว้สำหรับไปอ่านของคนอื่นโดยปกติไม่เขียนแบบนี้
 # ปกติจะเขียนเป็น print(f"Name: {person[0]}, Age: {person[1]}, Job: {person[2]}")
+=======
+person = ("Alice", 25, "Engineer")
+name, age, job = person
+>>>>>>> upstream/main
 print(f"Name: {name}, Age: {age}, Job: {job}")
 
 # Swapping variables using tuples
